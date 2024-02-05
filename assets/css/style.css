@@ -1,0 +1,285 @@
+/*Шрифт Wadik*/
+@font-face {
+    font-family: 'Wadik';
+    src: url('../fonts/Wadik/Wadik.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Шрифт Open Sans*/
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/Open Sans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/Open Sans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: "OpenSans-Regular", sans-serif;
+    background-color: #181818;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000000;
+    align-items: center;
+    max-height: 100px;
+    margin-bottom: 35px;
+}
+header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.menu a {
+    text-decoration: none;
+    font-family: "Wadik", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF; /* Цвет при наведении (когда текст виден) */
+    transition: color 200ms; /* Изменение цвета будет анимировано в течение 200 миллисекунд */
+}
+.menu a:hover {
+    background: linear-gradient(90deg,rgba(10,229,251,1), rgba(253,62,62,1)); /* Градиентный цвет текста */
+    background-clip: text; /* Позволяет применить градиент к тексту */
+    -webkit-background-clip: text; /* Для браузеров, поддерживающих префикс -webkit- */
+    color: transparent; /* Делаем текст прозрачным, чтобы виден был только градиент */
+}
+header img {
+    position: relative;
+    /*top: 5px;*/
+    bottom: 5px;
+    width: 60px;
+    z-index: 2;
+}
+header .up-border {
+    background-color: #fd3e3e;
+    height: 20px;
+    margin: 0 70px auto 0;
+    width: 100%;
+    z-index: 1;
+}
+header .down-border {
+    z-index: 1;
+    width: calc(100% - 35px);
+    background-color: #4de8f4;
+    height: 20px;
+    margin: auto 0 0 50px;
+    margin-left: auto;
+}
+.backgraund {
+    position: fixed;
+    background-color: #000000;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    margin: 0 400px;
+    z-index: -1;
+    filter: blur(15px);
+}
+footer {
+    /*position: absolute;*/
+    left: 0;
+    bottom: 0;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 50;
+    height: 40px;
+    width: 100%;
+    background-color: #fd3e3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin-bottom: 45px;
+}
+.title .first{
+    display: flex;
+    margin: 0 0 40px 0;
+
+}
+.title img{
+    height: 160px;
+}
+.first .text{
+    font-family: "Wadik", sans-serif;
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 10px;
+}
+.first .text .one{
+    margin: 0;
+}
+.first .text .two{
+    margin: 0 0 0 70px;
+}
+.title .second{
+    display: flex;
+    flex-direction: column;
+    font-family: "Wadik", sans-serif;
+    font-size: 40px;
+    align-items: center;
+    color: #FFFFFF;
+}
+.second .left{
+    font-size: 55px;
+    color: #4de8f4;
+}
+.second .right{
+    font-size: 55px;
+    color: #fd3e3e;
+}
+.second p {
+    margin: 0;
+}
+.shop {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.shop img {
+    width: 400px    ;
+    height: 260px;
+    transition: transform 0.3s ease; /* Анимация увеличения с плавным переходом */
+}
+.shop img:hover {
+    transform: scale(1.05); /* Увеличение изображения в 1.2 раза при наведении */
+}
+.news {
+    margin-bottom: 40px;
+    font-family: "Wadik", sans-serif;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news ul {
+    font-family: "OpenSans-Bold", sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+}
+.news p {
+    margin: 0 0 20px 0;
+}
+.news li {
+    margin: 0 0 10px 0;
+}
+.news ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 200ms; /* Изменение цвета будет анимировано в течение 200 миллисекунд */
+}
+.news ul a:hover {
+    background: linear-gradient(90deg,rgba(10,229,251,1), rgba(253,62,62,1)); /* Градиентный цвет текста */
+    background-clip: text; /* Позволяет применить градиент к тексту */
+    -webkit-background-clip: text; /* Для браузеров, поддерживающих префикс -webkit- */
+    color: transparent; /* Делаем текст прозрачным, чтобы виден был только градиент */
+}
+.map {
+    display: flex;
+    width: 840px;
+    height: 350px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.map iframe {
+    width: 100%;
+    height: 350px;
+}
+
+.error {
+    margin-top: 150px;
+    font-family: "Wadik", sans-serif;
+    font-size: 80px;
+    color: #FFFFFF;
+}
+.error .ups{
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 50px;
+}
+.error p {
+    margin: 20px;
+}
+
+table.iksweb{
+    text-decoration: none;
+    border-collapse:collapse;
+    width: 980px;
+    text-align:left;
+    margin-top: 50px;
+    font-family: "OpenSans-Regular", sans-serif;
+    margin-bottom: 50px;
+}
+thead {
+    text-align: center;
+}
+table.iksweb th{
+    font-weight:500;
+    color:#ffffff;
+}
+table.iksweb td{
+    color:#ffffff;
+    font-size: 20px;
+}
+table.iksweb td,table.iksweb th{
+    white-space:pre-wrap;
+    padding:10px 5px;
+    vertical-align: middle;
+    border: 1px solid #ffffff;
+}
+
+table.iksweb tbody tr:hover td{
+    background: linear-gradient(90deg,rgba(10,229,251,1), rgba(253,62,62,1)); /* Градиентный цвет текста */
+    background-clip: text; /* Позволяет применить градиент к тексту */
+    -webkit-background-clip: text; /* Для браузеров, поддерживающих префикс -webkit- */
+    color: transparent; /* Делаем текст прозрачным, чтобы виден был только градиент */
+}
+table a {
+    color: #ffffff;
+}
+.newsnews {
+    width: 900px;
+}
+.newsnews li{
+    margin-bottom: 10px;
+}
+.newsnews a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 30px;
+    transition: color 200ms;
+}
+.newsnews a:hover {
+    background: linear-gradient(90deg,rgba(10,229,251,1), rgba(253,62,62,1)); /* Градиентный цвет текста */
+    background-clip: text; /* Позволяет применить градиент к тексту */
+    -webkit-background-clip: text; /* Для браузеров, поддерживающих префикс -webkit- */
+    color: transparent; /* Делаем текст прозрачным, чтобы виден был только градиент */
+}
+.office {
+    display: flex;
+    gap: 20px;
+    width: 900px;
+    margin-bottom: 20px;
+}
+.office img {
+    width: 400px;
+}
+.office-text {
+    width: 900px;
+    margin-bottom: 50px;
+}
